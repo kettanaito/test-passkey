@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "test-passkey",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Create WebAuthn Passkeys for testing your applications",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
