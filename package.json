@@ -1,0 +1,26 @@
+{
+  "name": "test-passkey",
+  "version": "1.0.0",
+  "description": "Create WebAuthn Passkeys for testing your application",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "passkey",
+    "webauthn",
+    "test",
+    "mock"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "playwright-core": "^1.56.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cbor": "^10.0.11"
+  }
+}
