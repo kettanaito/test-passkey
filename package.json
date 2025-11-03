@@ -25,6 +25,11 @@
     "url": "https://github.com/kettanaito"
   },
   "license": "MIT",
+  "homepage": "https://github.com/kettanaito/test-passkey",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kettanaito/test-passkey.git"
+  },
   "devDependencies": {
     "@ossjs/release": "^0.10.0",
     "@types/node": "^24.10.0",
