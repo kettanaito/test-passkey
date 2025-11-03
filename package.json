@@ -1,11 +1,14 @@
 {
+  "type": "module",
   "name": "test-passkey",
   "version": "1.0.0",
-  "description": "Create WebAuthn Passkeys for testing your application",
+  "description": "Create WebAuthn Passkeys for testing your applications",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsdown",
+    "release": "release publish"
   },
   "keywords": [
     "passkey",
@@ -17,7 +20,10 @@
     "./build",
     "./index.ts"
   ],
-  "author": "",
+  "author": {
+    "name": "Artem Zakharchenko",
+    "url": "https://github.com/kettanaito"
+  },
   "license": "MIT",
   "devDependencies": {
     "@ossjs/release": "^0.10.0",
@@ -27,6 +33,7 @@
     "vitest": "^4.0.6"
   },
   "dependencies": {
-    "cbor": "^10.0.11"
+    "cbor": "^10.0.11",
+    "tsdown": "^0.15.12"
   }
 }
