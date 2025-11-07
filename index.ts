@@ -3,7 +3,7 @@ import cbor from 'cbor'
 
 export type TestPasskey = {
   credential: TestPasskeyCredential
-  publicKey: Uint8Array
+  publicKey: Uint8Array<ArrayBuffer>
 }
 
 export type TestPasskeyCredential = {
@@ -72,6 +72,6 @@ function generateKeyPair() {
     privateKey: privateKey
       .export({ type: 'pkcs8', format: 'der' })
       .toString('base64'),
-    publicKey: cosePublickey,
+    publicKey: cosePublickey as Uint8Array<ArrayBuffer>,
   }
 }
